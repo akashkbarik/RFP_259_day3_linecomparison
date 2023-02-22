@@ -29,6 +29,19 @@ public class LineComparison {
             System.out.println("the line are equal .");
         } else
             System.out.println("they are not equal...");
+
+        //comparing two line based on their end points
+        Float Length1 = new Float(length1);
+        Float Length2 = new Float(length2);
+        int result = Length1.compareTo(Length2);
+
+        if (result < 0) {
+            System.out.println("the result is : "+result + ", this means line1 is " + result + " smaller than line2");
+        } else if (result > 0) {
+            System.out.println("the result is : "+result + ", this means line1 is " + result + " greater than line2");
+        } else
+            System.out.println("the result is : "+result + ", this means they are equal");
+
     }
 
 }
