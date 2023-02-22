@@ -21,7 +21,14 @@ public class LineComparison {
 
         float length2 = (float) Math.sqrt(Math.pow(point_a1 - point_a2, 2) + Math.pow(point_b1 - point_b2, 2));
 
+        System.out.println("length of Line 1 is : " + length1 + "\n" + "length of Line 2 is : " + length2);
+        System.out.println(".....................................");
 
+        //comparing if both lines are equal
+        if (length1 == length2) {
+            System.out.println("the line are equal .");
+        } else
+            System.out.println("they are not equal...");
     }
 
 }
