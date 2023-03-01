@@ -30,11 +30,12 @@ public class LineComparison {
 
         Float Length1 = new Float(l1.length);
         Float Length2 = new Float(l2.length);
+        System.out.println("value of s1 :" + Length1 + "\n" + "value of s2 : " + Length2);
+
         LineComparison lineComparison=new LineComparison();
         lineComparison.equals(Length1,Length2);
         lineComparison.compareLength(Length1,Length2);
     }
-//        System.out.println("value of s1 :" + Length1 + "\n" + "value of s2 : " + Length2);
         public void equals (Float Length1,Float Length2) {
 
             if (Length1.equals(Length2)) {
